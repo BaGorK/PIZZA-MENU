@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
   background-color: rgba(219, 219, 219, 0.62);
@@ -28,8 +28,9 @@ body {
   max-width: 80rem;
   margin: 0 auto;
   margin-bottom: 4.2rem;
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
 
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,8 +47,8 @@ body {
   letter-spacing: 3px;
   width: 80%;
 
-  position: relative;
   display: block;
+  /* padding: 0 0.9rem; */
 }
 
 .header h1::before,
@@ -55,18 +56,21 @@ body {
   content: '';
 
   position: absolute;
+  /* padding: 0 1.6rem; */
+  top: 50%;
+  transform: translateY(-50%);
   width: 4rem;
   height: 3px;
   background-color: #edc84b;
-  margin-top: 1.4rem;
+  /* margin-top: 1.4rem; */
 }
 
 .header h1::before {
-  left: 0;
+  left: 1rem;
 }
 
 .header h1::after {
-  right: 0;
+  right: 1rem;
 }
 
 /* //////////MAIN MENU/////////// */
@@ -150,4 +154,11 @@ body {
 .pizza.sold-out img {
   filter: grayscale();
   opacity: 0.8;
+}
+
+/* ************** */
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.4rem;
 }
